@@ -333,7 +333,7 @@
 				
 			});
 			
-			var processor = "contact.php",
+			var processor = "/contact",
 				str = $(this).serialize();
 			
 			$("#contact-form .success-message, #contact-form .alert-message, #contact-form .error-message ").hide();
@@ -363,7 +363,6 @@
 						$("#contact-form .alert-message").fadeIn().html( data );
 						
 					}
-				   
 			   }
 				   
 			});
