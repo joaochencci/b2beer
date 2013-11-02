@@ -349,14 +349,13 @@
 				    				   
 					if(data) {
 					
-						$("#contact-form .success-message").fadeIn();
-						$("#contact-form").each(function(){
-							this.reset();
-						});
+						alert("Orçamento recebido com sucesso! Entraremos em contato com os fornecedores e te enviaremos uma resposta o mais rápido possível.")
+						document.location.reload();
 					  
 					} else {
 					
-						$("#contact-form .error-message").fadeIn();
+						alert("Oops, algo deu errado. Vamos atualizar a pagina e você tenta de novo ok? Se o problema persistir, entre em contato com b2beer.startup@gmail.com ou pela página do Facebook.")
+						document.location.reload();
 					
 					}
 			   }
