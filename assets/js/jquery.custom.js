@@ -40,30 +40,7 @@
 			
 			}, { offset: '-1px' } );
 			
-		});
-		
-		
-		
-		/* Word Rotator
-		================================================== */		
-		var ut_word_rotator = function() {
-                
-			var ut_rotator_words = [
-				'We are <span>Brooklyn </span>',
-				'We love to <span>Design</span>',
-				'We love <span>Coding</span>'
-			] ,
-			counter = 0;                
-			
-			setInterval(function() {
-			$(".hero-title").fadeOut(function(){
-					$(this).html(ut_rotator_words[counter=(counter+1)%ut_rotator_words.length]).fadeIn();
-				});
-			}, 3000 );
-		}
-		
-		ut_word_rotator();
-		
+		});		
 		
 		
 		/* Slogan / Welcome Message Animation
@@ -356,7 +333,7 @@
 				
 			});
 			
-			var processor = "contact.php",
+			var processor = "/beer/create",
 				str = $(this).serialize();
 			
 			$("#contact-form .success-message, #contact-form .alert-message, #contact-form .error-message ").hide();
@@ -370,23 +347,18 @@
 				   	
 					$("#contact-form").append('<span class="feedback"></span>');
 				    				   
-					if(data === 'OK') {
+					if(data) {
 					
 						$("#contact-form .success-message").fadeIn();
 						$("#contact-form").each(function(){
 							this.reset();
 						});
 					  
-					} else if (data === 'ERROR') {
+					} else {
 					
 						$("#contact-form .error-message").fadeIn();
 					
-					} else {
-						
-						$("#contact-form .alert-message").fadeIn().html( data );
-						
 					}
-				   
 			   }
 				   
 			});
