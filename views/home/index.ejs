@@ -26,7 +26,7 @@
             
             <div class="about-box">
                 <h3>Social</h3>
-                <p>Crie, compartilhe e principalmente <strong>beba</strong> com seus amigos! Tudo isso usando seu celular e sua conta do Facebook!</p>
+                <p>Crie, compartilhe, compra, venda e principalmente <strong>beba</strong> com seus amigos! Tudo isso usando seu celular e sua conta do Facebook!</p>
             </div>
         </div>
         
@@ -132,24 +132,58 @@
         <!-- contact message -->
         <div class="grid-parent grid-40 suffix-5 mobile-grid-100 tablet-grid-100">
         <div class="contact-message">
-        <h3 class="grid-100">Escolha o Malte:</h3>
-        <ul class="icons-ul">
-            <li><i class="icon-li fa-beer"></i><input type="radio" name="beer_type" value="pilsen">Pilsen</li>
-            <li><i class="icon-li fa-beer"></i><input type="radio" name="beer_type" value="paleale">Pale Ale</li>
-            <li><i class="icon-li fa-beer"></i><input type="radio" name="beer_type" value="carared">Carared</li>
-        </ul>
+            <h3 class="grid-100">Escolha o Malte:</h3>
+            <ul class="icons-ul">
+                <li>
+                    <i class="icon-li fa-beer"></i>
+                    <input type="radio" name="beer_type" value="pilsen"> <strong>Pilsen</strong>: O tipo mais comum de cerveja. A maioria dos rótulos mais vendidos no Brasil apresentam as características de coloração clara, dourada e baixa fermentação, Característico das bebidas do grupo de lagers.
+
+                    <br />Teor alcoólico: Baixo (3% a 5%)
+                </li>
+
+                <li>
+                    <i class="icon-li fa-beer"></i>
+                    <input type="radio" name="beer_type" value="pilsen"> <strong>Stout</strong>: O que é: As stouts fazem parte do outro grande grupo das cervejas, o Ale, caracterizado por alta fermentação e malte acentuado, tornando o sabor mais forte. No caso deste tipo, elas são feitas a partir de cevada torrada e recebem adição de grãos de café ou até chocolate, caracterizando uma coloração escura.
+
+                    <br />Teor alcoólico: Alto (entre 8% e 12%)
+                </li>
+
+                <li>
+                    <i class="icon-li fa-beer"></i>
+                    <input type="radio" name="beer_type" value="pilsen"> <strong>Weissbier</strong>: A famosa cerveja de trigo tem esse nome justamente pela variação do malte, embora também tenha cevada na composição. Existem variações deste tipo de bebida, que modificam coloração e sabor, mas a maioria é opaca, refrescante e, por não ser filtrada, é uma pouco mais grossa, produzindo espuma cremosa.
+
+                    <br />Teor alcoólico: Médio (em torno de 6%)
+                </li>
+
+            </ul>
         </div>
         </div><!-- close contact message -->
         
         <!-- contact form -->
         <div class="grid-parent grid-55 mobile-grid-100 tablet-grid-100">
         <div class="contact-form-holder clearfix">
-        
-        
-        <h3 class="grid-100">Informações para contato</h3>
-        
+
         <!-- contact form -->
         <form id="contact-form" class="contact-form">
+
+            <h3 class="grid-100">Escolha como será produzida:</h3>
+            <ul class="icons-ul">
+                <li><input type="radio" name="beer_type" value="pilsen">Eu mesmo! Quero o kit para fazer na minha casa. <br /></li>
+                <li><input type="radio" name="beer_type" value="paleale">Eu mesmo, numa cervejaria com um mestre cervejeiro me auxiliando. <br /></li>
+                <li><input type="radio" name="beer_type" value="carared">Quero comprar de um fornecedor artesanal parceiro! <br /></li>
+            </ul>
+
+            <h3 class="grid-100">Personalize!</h3>
+
+            <ul class="grid-100">
+                
+                <li><input id="name" class="name" type="text" name="beer_name" placeholder="Nome da Cerveja"></li>
+                <li><input type="checkbox" name="beer_logo" value="true">Quero um rótulo personalizado de graça!<br /></li>
+                
+            </ul>
+        
+        
+            <h3 class="grid-100">Informações para contato</h3>
         
             <ul class="grid-50">
             
