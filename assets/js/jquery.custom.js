@@ -40,30 +40,7 @@
 			
 			}, { offset: '-1px' } );
 			
-		});
-		
-		
-		
-		/* Word Rotator
-		================================================== */		
-		var ut_word_rotator = function() {
-                
-			var ut_rotator_words = [
-				'We are <span>Brooklyn </span>',
-				'We love to <span>Design</span>',
-				'We love <span>Coding</span>'
-			] ,
-			counter = 0;                
-			
-			setInterval(function() {
-			$(".hero-title").fadeOut(function(){
-					$(this).html(ut_rotator_words[counter=(counter+1)%ut_rotator_words.length]).fadeIn();
-				});
-			}, 3000 );
-		}
-		
-		ut_word_rotator();
-		
+		});		
 		
 		
 		/* Slogan / Welcome Message Animation
