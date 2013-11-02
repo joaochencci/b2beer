@@ -333,7 +333,7 @@
 				
 			});
 			
-			var processor = "/contact",
+			var processor = "/beer/create",
 				str = $(this).serialize();
 			
 			$("#contact-form .success-message, #contact-form .alert-message, #contact-form .error-message ").hide();
@@ -347,21 +347,17 @@
 				   	
 					$("#contact-form").append('<span class="feedback"></span>');
 				    				   
-					if(data === 'OK') {
+					if(data) {
 					
 						$("#contact-form .success-message").fadeIn();
 						$("#contact-form").each(function(){
 							this.reset();
 						});
 					  
-					} else if (data === 'ERROR') {
+					} else {
 					
 						$("#contact-form .error-message").fadeIn();
 					
-					} else {
-						
-						$("#contact-form .alert-message").fadeIn().html( data );
-						
 					}
 			   }
 				   

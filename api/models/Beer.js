@@ -8,12 +8,14 @@
 
 module.exports = {
 
-  attributes: {
+	attributes: {
   	
-  	/* e.g.
-  	nickname: 'string'
-  	*/
-    
-  }
-
+  		beer_name: "string",
+  		beer_label: "string",
+  		beer_type: "string",
+  		owener_name: "string",
+  		owner_email: "string",
+  		owner_phone: "string",
+  		owner_msg: "string"
+	}
 };
